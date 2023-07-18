@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const http = require('http')
 const server = http.createServer(app)
+const db = require('./models/database_config');
 
 const port = 3000 || process.env.PORT
 
